@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        header {
+            background-color: grey;
+            color: azure;
+            display: flex;
+        }
+
+        header  h1 {
+            flex-grow: 6;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            align-items: end;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        header nav ul li:hover {
+            background-color: rgb(185, 183, 183);
+        }
+
+        footer {
+            display: flex;
+            text-align: inherit;
+        }
+        footer div {
+            display: flex;
+        }
+        footer p {
+            flex-grow: 8;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -14,8 +48,23 @@
     <header>
         <h1>Marker</h1>
         <nav>
-            <li>Home</li>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Beast Deals</li>
+                <li>Tools</li>
+                <li>Contact</li>
+                <li>🔍</li>
+            </ul>
         </nav>
     </header>
+    <footer>
+        <p>2025 Market</p>
+        <div>
+            <p>Privacy Policy</p>
+            <p>Terms</p>
+            <p>Contact</p>
+        </div>
+    </footer>
 </body>
 </html>
